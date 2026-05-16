@@ -1,0 +1,9 @@
+model Token {
+  id        Int     @id @default(autoincrement())
+  name      String
+  symbol    String
+  decimals  Int
+  totalSupply Float
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
